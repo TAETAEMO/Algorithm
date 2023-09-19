@@ -32,4 +32,29 @@ var romanToInt = function(s) {
     
 };
 
-//다시풀기
+/*
+function romanToNum(s) {
+  const romeNum = {
+    'I': 1,
+    'V': 5,
+    'X': 10,
+    'L': 50,
+    'C': 100,
+    'D': 500,
+    'M': 1000 
+  }
+  let result = 0
+  const romeArray = s.split('')
+  const numArray = romeArray.map(rome => romeNum[rome])
+  
+  for (i=0; i<numArray.length; i++) {
+    if (numArray[i] < numArray[i+1] ) {
+      result -= numArray[i]
+    } else {
+      result += numArray[i]
+    }
+  }
+  
+  return result
+}
+*/
