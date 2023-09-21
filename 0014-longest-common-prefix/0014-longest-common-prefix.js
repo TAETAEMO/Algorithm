@@ -27,3 +27,18 @@ var longestCommonPrefix = function(strs) {
 
   return prefix;
 };
+
+/*
+var longestCommonPrefix = function(strs) {
+  let answer = strs[0]; // 첫 번째 문자로 초기화
+
+  // 두 번째 문자부터 answer와 비교하며 순회
+  for (let i = 1; i < strs.length; i++) {
+    answer = commonPrefix(answer, strs[i]);
+    // flower, flow => flo
+    // flo, flight => fl
+  }
+
+  return answer;
+};
+*/
