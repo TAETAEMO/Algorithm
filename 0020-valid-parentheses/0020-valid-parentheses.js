@@ -24,3 +24,32 @@ var isValid = function(s) {
         result = false;
     return result;
 };
+
+/*
+function isValid(s) {
+  const stack = [];
+  const bracketMap = {
+    '(': ')',
+    '{': '}',
+    '[': ']'
+  };
+
+  for (let i = 0; i < s.length; i++) {
+    const char = s[i];
+
+    if (bracketMap[char]) {
+      // 여는 괄호인 경우, 스택에 추가합니다
+      stack.push(char);
+    } else {
+      // 닫는 괄호인 경우
+      const lastOpenBracket = stack.pop();
+      if (char !== bracketMap[lastOpenBracket]) {
+        return false;  // 일치하지 않는 닫는 괄호
+      }
+    }
+  }
+
+  // 남은 여는 괄호가 있는지 확인합니다
+  return stack.length === 0;
+}
+*/
