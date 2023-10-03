@@ -23,6 +23,7 @@ var mergeTwoLists = function(list1, list2) {
     }
 };
 
+//다른 방식
 /*
 function mergeTwoLists(l1, l2) {
     if (!l1) return l2;
