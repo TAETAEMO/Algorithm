@@ -18,3 +18,12 @@ var searchInsert = function (nums, target) {
   // 같아서 while문이 끝난거면 middle, 달라서 마지막에 끝난거면 left의 값을 return한다.
   return nums[middle] === target ? middle : left;
 };
+
+/*var searchInsert = function (nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] >= target) {
+      return i;
+    }
+  }
+  return nums.length;
+};*/
