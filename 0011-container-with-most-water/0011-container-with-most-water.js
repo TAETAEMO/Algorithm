@@ -29,3 +29,9 @@ var maxArea = function(height) {
 };
 
 const min = (a, b) => a < b ? a : b;
+
+//1. 변수 초기화(toRight = 0, toLeft = n-1)
+// 2. while(toRight < toLeft)
+//   2-1. toRight, toLeft 기반 넓이값 계산하여 answer값 비교 및 갱신
+//   2-2. toRight, toLeft 의 높이를 비교하여, 더 낮은 값의 포인터 이동
+//   2-3. 포인터 이동시, 기존보다 높은 높이가 나올 때까지 이동
